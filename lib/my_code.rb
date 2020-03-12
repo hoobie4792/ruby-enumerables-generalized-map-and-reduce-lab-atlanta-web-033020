@@ -1,6 +1,7 @@
 # Your Code Here
 def map(source_array)
-  yield
+  yield(base)
+  return base
 end
 
 def reduce(source_array)
