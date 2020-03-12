@@ -5,6 +5,7 @@ def map(array)
   
   while i < array.length do
     arr.push(yield(array[i]))
+    i += 1
   end
   
   return arr
