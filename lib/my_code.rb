@@ -12,18 +12,16 @@ def map(source_array)
 end
 
 def reduce(source_array, starting_point = nil)
-  index = 0
-  
   if starting_point
-    total = starting_point
+    sum = starting_point
+    index = 0
   else
-    total = 0
+    sum = source_array[0]
+    index = 1
   end
-  
   while index < source_array.length do
-    yield(total, source_array[index])
+    sum = yield(sum, source_array[index])
     index += 1
   end
-  
-  return total
+  return sum
 end
