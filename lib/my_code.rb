@@ -4,6 +4,6 @@ def map(source_array)
   
   
   
-  yield(source_array)
-  return source_array
+  arr = yield(source_array)
+  return arr
 end
