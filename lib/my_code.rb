@@ -24,4 +24,6 @@ def reduce(source_array, starting_point = nil)
     yield(total, source_array[index])
     index += 1
   end
+  
+  return total
 end
