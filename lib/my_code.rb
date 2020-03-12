@@ -4,6 +4,9 @@ def map(source_array)
   arr = []
   
   while index < source_array.length do
-    yield(source_array[index])
+    arr.push(yield(source_array[index]))
+    index += 1
   end
+  
+  return arr
 end
