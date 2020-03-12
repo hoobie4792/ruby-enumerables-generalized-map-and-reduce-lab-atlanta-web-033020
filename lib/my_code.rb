@@ -18,4 +18,6 @@ def reduce(source_array, starting_point = 0)
   while index < source_array.length do
     total += yield(source_array[index])
   end
+  
+  return total
 end
